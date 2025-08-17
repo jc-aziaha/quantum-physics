@@ -1,0 +1,17 @@
+services:
+  php:
+    build: ./docker/php
+    container_name: ${APP_NAME:-app}-modelisation
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "5000:80"
+    networks:
+      - ${APP_NAME:-app}-network
+    volumes:
+      - ./:/var/www
+      - ./docker/apache/app.conf:/etc/apache2/sites-enabled/000-default.conf
+
+networks:
+  quantum-physics-network:
+    driver: bridge

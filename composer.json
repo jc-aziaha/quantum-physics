@@ -1,0 +1,21 @@
+{
+    "name": "quantum/physics",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "QuantumPhysics\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jean-Claude AZIAHA",
+            "email": "aziaha.formations@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
