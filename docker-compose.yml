@@ -1,7 +1,7 @@
 services:
   php:
     build: ./docker/php
-    container_name: ${APP_NAME:-app}-modelisation
+    container_name: ${APP_NAME:-app}-modeling
     restart: unless-stopped
     tty: true
     ports:
